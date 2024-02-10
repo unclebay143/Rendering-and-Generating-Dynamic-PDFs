@@ -68,7 +68,10 @@ const PDFCreatorPage = () => {
   const inputStyles = "border border-slate-200 p-1.5 rounded";
 
   return (
-    <div className='flex justify-center items-center min-h-screen'>
+    <div className='flex flex-col justify-center items-center min-h-screen'>
+      <h3 className='text-center md:text-lg mb-4 font-medium text-slate-700'>
+        Create PDF using React-PDF-renderer
+      </h3>
       {showPdf ? (
         <div className='flex flex-col items-center'>
           <PDFView

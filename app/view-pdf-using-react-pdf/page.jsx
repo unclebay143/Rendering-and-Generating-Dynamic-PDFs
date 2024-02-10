@@ -20,6 +20,9 @@ export default function Home() {
 
   return (
     <main className='flex flex-col justify-center items-center gap-3 py-5 px-24'>
+      <h3 className='text-center md:text-lg mb-4 font-medium text-slate-700'>
+        View PDF using React-PDF
+      </h3>
       <Document file='/multiple.pdf' onLoadSuccess={onDocumentLoadSuccess}>
         <Page
           pageNumber={currentPageNumber}
@@ -27,7 +30,6 @@ export default function Home() {
           renderTextLayer={false}
         />
       </Document>
-
       <section className='flex justify-center items-center gap-3 mb-10'>
         {currentPageNumber !== 1 ? (
           <button
